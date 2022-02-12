@@ -10,5 +10,7 @@ urlpatterns = {
     path('CPP', views.CPP, name = "CPP"),
     path('DataAnalyst', views.DataAnalyst, name = "DataAnalyst"),
     path('CompArch', views.CompArch, name = "CompArch"),
-
+    path('landing', views.landing, name = "landing"),
+    path('questions', views.questions, name = "questions"),
+    path('l1', views.l1, name = "l1")
 }

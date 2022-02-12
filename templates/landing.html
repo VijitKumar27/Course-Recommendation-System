@@ -67,6 +67,7 @@
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
                 <li class="cta"><a href="#contact-section" class="nav-link"><span>Contact Us</span></a></li>
+                <li class="cta"><a href="" class="nav-link"><span>Hi {{name}}</span></a></li>
               </ul>
             </nav>
             <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
@@ -90,25 +91,6 @@
 
                 </div>
 
-                <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="500">
-                  <form action="landing" method="post" class="form-box">
-                    {% csrf_token %}
-                    <h3 class="h4 text-black mb-4">Sign Up</h3>
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Email Addresss">
-                    </div>
-                    <div class="form-group">
-                      <input type="password" class="form-control" placeholder="Password">
-                    </div>
-                    <div class="form-group mb-4">
-                      <input type="password" class="form-control" placeholder="Re-type Password">
-                    </div>
-                    <div class="form-group">
-                      <input type="submit" class="btn btn-primary btn-pill" value="Sign up">
-                    </div>
-                  </form>
-
-                </div>
               </div>
             </div>
             

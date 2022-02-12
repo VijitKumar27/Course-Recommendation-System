@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -84,61 +86,114 @@
             
               <div class="comment-form-wrap pt-5">
                 <h3 class="mb-5">Questions</h3>
-                <form action = 'l1' class="p-5 bg-light">
 
 
+                <form action="levels" class="p-5 bg-light" method="post" >
+                  {%csrf_token%}
                   <div class="radio-example">
                     Choose the correct HTML tag for the largest heading <br>
-                    <input type="radio" name="q1" value="1" id="c1"/> &lth1&gt  &lt/h1&gt
-                    <input type="radio" name="q1" value="2" id="c2"/> &lth6&gt  &lt/h6&gt
-                    <input type="radio" name="q1" value="3" id="c3"/> &lthead&gt  &lt/head&gt
-                    <input type="radio" name="q1" value="4" id="c4"/>  &ltheading&gt  &lt/heading&gt
+                    <input type="radio" name="q1" value="10" id="c1"/> &lth1&gt  &lt/h1&gt
+                    <input type="radio" name="q1" value="0" id="c2"/> &lth6&gt  &lt/h6&gt
+                    <input type="radio" name="q1" value="0" id="c3"/> &lthead&gt  &lt/head&gt
+                    <input type="radio" name="q1" value="0" id="c4"/>  &ltheading&gt  &lt/heading&gt
                     <label for="radioOneInput"></label>
                   </div> 
 
-                  
                   <div class="radio-example">                  
                     Action attribute in HTML form specifies that <br>
-                    <input type="radio" name="q2" value="1" id="c1"/> Which HTTP method is used
-                    <input type="radio" name="q2" value="2" id="c2"/> Which action is going on
-                    <input type="radio" name="q2" value="3" id="c3"/> Where to submit the form
-                    <input type="radio" name="q2" value="4" id="c4"/> The Auto completion of form
+                    <input type="radio" name="q2" value="0" id="c1"/> Which HTTP method is used
+                    <input type="radio" name="q2" value="10" id="c2"/> Which action is going on
+                    <input type="radio" name="q2" value="0" id="c3"/> Where to submit the form
+                    <input type="radio" name="q2" value="0" id="c4"/> The Auto completion of form
                     <label for="radioOneInput"></label>
                   </div> 
 
                   <div class="radio-example">
                     The following example uses what type of function to handle an event?element.addEventListener('click', function(event){}); <br>
-                    <input type="radio" name="q1" value="1" id="c1"/> named function
-                    <input type="radio" name="q1" value="2" id="c2"/> anonymous function
-                    <input type="radio" name="q1" value="3" id="c3"/> inline function
-                    <input type="radio" name="q1" value="4" id="c4"/> arrow function
+                    <input type="radio" name="q3" value="0" id="c1"/> named function
+                    <input type="radio" name="q3" value="10" id="c2"/> anonymous function
+                    <input type="radio" name="q3" value="0" id="c3"/> inline function
+                    <input type="radio" name="q3" value="0" id="c4"/> arrow function
                     <label for="radioOneInput"></label>
                   </div> 
 
                   <div class="form-group">
                     <div class="radio-example">
-                       <br>
-                      <input type="radio" name="q1" value="1" id="c1"/> &lth1&gt  &lt/h1&gt
-                      <input type="radio" name="q1" value="2" id="c2"/> &lth6&gt  &lt/h6&gt
-                      <input type="radio" name="q1" value="3" id="c3"/> &lthead&gt  &lt/head&gt
-                      <input type="radio" name="q1" value="4" id="c4"/>  &ltheading&gt  &lt/heading&gt
+                      The CSS selector_____________selects all &ltdiv& elements plus the element with id="log".<br>
+                      <input type="radio" name="q4" value="10" id="c1"/>div #log
+                      <input type="radio" name="q4" value="0" id="c2"/>div.#log
+                      <input type="radio" name="q4" value="0" id="c3"/>div&gt#log
+                      <input type="radio" name="q4" value="0" id="c4"/>div, #log
+                      
+                      <label for="radioOneInput"></label>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="radio-example">
+                      Which of the below method is used to get the JSON data using HTTP requests?<br>
+                      <input type="radio" name="q5" value="0" id="c1"/> jQuery.getScript( url, [callback] )
+                      <input type="radio" name="q5" value="0" id="c2"/> jQuery.post( url, [data], [callback], [type] )
+                      <input type="radio" name="q5" value="0" id="c3"/> jQuery.post( url, [type] )
+                      <input type="radio" name="q5" value="20" id="c4"/> jQuery.getJSON( url, [data], [callback] )
                       <label for="radioOneInput"></label>
                     </div>                     
                   </div>
 
                   <div class="form-group">
                     <div class="radio-example">
-                      The CSS selector_____________selects all &ltdiv& elements plus the element with id="log".<br>
-                      <input type="radio" name="q1" value="1" id="c1"/>div #log
-                      <input type="radio" name="q1" value="2" id="c2"/>div.#log
-                      <input type="radio" name="q1" value="3" id="c3"/>div&gt#log
-                      <input type="radio" name="q1" value="4" id="c4"/>div, #log
-                      <input type="radio" value="1" id="radioOneInput"/>
+                      Everything in React is a _____________<br>
+                      <input type="radio" name="q6" value="0" id="c1"/> Module
+                      <input type="radio" name="q6" value="20" id="c2"/> Component
+                      <input type="radio" name="q6" value="0" id="c3"/> Package
+                      <input type="radio" name="q6" value="0" id="c4"/> Class
                       <label for="radioOneInput"></label>
-                    </div>
+                    </div>                     
                   </div>
 
+                  <div class="form-group">
+                    <div class="radio-example">
+                      Which method in a React Component should you override to stop the component from updating?<br>
+                      <input type="radio" name="q7" value="0" id="c1"/> willComponentUpdate
+                      <input type="radio" name="q7" value="20" id="c2"/> shouldComponentUpdate
+                      <input type="radio" name="q7" value="0" id="c3"/> componentDidUpdate
+                      <input type="radio" name="q7" value="0" id="c4"/> componentDidMount
+                      <label for="radioOneInput"></label>
+                    </div>                     
+                  </div>
 
+                  <div class="form-group">
+                    <div class="radio-example">
+                      Which of the following is used to successfully add a header?<br>
+                      <input type="radio" name="q8" value="30" id="c1"/> response.writeHead(200, {'Content-Type': 'text/plain'})
+                      <input type="radio" name="q8" value="0" id="c2"/> request.writeHeader(200, {'Content-Type': 'text/plain'})
+                      <input type="radio" name="q8" value="0" id="c3"/> response.addHead(200, {'Content-Type': 'text/plain'})
+                      <input type="radio" name="q8" value="0" id="c4"/> None of the above
+                      <label for="radioOneInput"></label>
+                    </div>                     
+                  </div>
+
+                  <div class="form-group">
+                    <div class="radio-example">  
+                      A collection and a document in MongoDB is equivalent to............. concepts respectively.<br>
+                      <input type="radio" name="q9" value="0" id="c1"/> Table and Column
+                      <input type="radio" name="q9" value="30" id="c2"/> Table and Row
+                      <input type="radio" name="q9" value="0" id="c3"/> Column and Row
+                      <input type="radio" name="q9" value="0" id="c4"/> Database and Table
+                      <label for="radioOneInput"></label>
+                    </div>                     
+                  </div>
+
+                  <div class="form-group">
+                    <div class="radio-example">  
+                      Where a captured value is are populated regarding route parameters?<br>
+                      <input type="radio" name="q10" value="0" id="c1"/> app.locals object.
+                      <input type="radio" name="q10" value="40" id="c2"/> req.params object.
+                      <input type="radio" name="q10" value="0" id="c3"/> req.data object.
+                      <input type="radio" name="q10" value="0" id="c4"/> None of the above
+                      <label for="radioOneInput"></label>
+                    </div>                     
+                  </div>
 
                   <div class="form-group">
                     <input type="submit" value="Submit" class="btn btn-primary">
@@ -148,21 +203,12 @@
               </div>
             </div>
 
-
-
           </div>
          
         </div>
       </div>
     </div>
 
-  
-
-
-
-           
-     
-         
 
         </div>
       </div>
@@ -237,3 +283,4 @@
     
   </body>
 </html>
+

@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OneSchool &mdash; Website by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <!-- <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet"> -->
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/jquery-ui.css">
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="static/css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="static/css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="static/css/aos.css">
+
+    <link rel="stylesheet" href="static/css/style.css">
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+    
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+      
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <div class="site-logo mr-auto w-25"><a href="index">RECO</a></div>
+
+
+          <div class="ml-auto w-25">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
+                <li class="cta"><a href="#contact-section" class="nav-link"><span>Good luck, {{name}}</span></a></li>
+              </ul>
+            </nav>
+            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
+          </div>
+        </div>
+      </div>
+      
+    </header>
+
+    <div class="intro-section single-cover" id="home-section">
+      
+      <div class="slide-1 " style="background-image: url('/static/images/img_2.jpg');" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="row justify-content-center align-items-center text-center">
+                <div class="col-lg-6">
+                  <h1 data-aos="fade-up" data-aos-delay="0">Questionnaire</h1>
+                  <p data-aos="fade-up" data-aos-delay="100">Introductory, do not worry if you can't answer. It iss for your reference.   &bullet; No negative marking &bullet; <a href="#" class="text-white"></a></p>
+                </div>
+
+                
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+            
+              <div class="comment-form-wrap pt-5">
+                <h3 class="mb-5">Questions</h3>
+
+
+                <form action="levels" class="p-5 bg-light" method="post" >
+                  {%csrf_token%}
+                  <div class="radio-example">
+                    <b>Question 1</b> <br>
+                    <input type="radio" name="q1" value="10" id="c1"/> &lth1&gt  &lt/h1&gt
+                    <input type="radio" name="q1" value="0" id="c2"/> &lth6&gt  &lt/h6&gt
+                    <input type="radio" name="q1" value="0" id="c3"/> &lthead&gt  &lt/head&gt
+                    <input type="radio" name="q1" value="0" id="c4"/>  &ltheading&gt  &lt/heading&gt
+                    <label for="radioOneInput"></label>
+                  </div> 
+
+                  <div class="radio-example">                  
+                    Action attribute in HTML form specifies that <br>
+                    <input type="radio" name="q2" value="0" id="c1"/> Which HTTP method is used
+                    <input type="radio" name="q2" value="10" id="c2"/> Which action is going on
+                    <input type="radio" name="q2" value="0" id="c3"/> Where to submit the form
+                    <input type="radio" name="q2" value="0" id="c4"/> The Auto completion of form
+                    <label for="radioOneInput"></label>
+                  </div> 
+
+                  <div class="radio-example">
+                    The following example uses what type of function to handle an event?element.addEventListener('click', function(event){}); <br>
+                    <input type="radio" name="q3" value="0" id="c1"/> named function
+                    <input type="radio" name="q3" value="10" id="c2"/> anonymous function
+                    <input type="radio" name="q3" value="0" id="c3"/> inline function
+                    <input type="radio" name="q3" value="0" id="c4"/> arrow function
+                    <label for="radioOneInput"></label>
+                  </div> 
+
+                  <div class="form-group">
+                    <div class="radio-example">
+                      The CSS selector_____________selects all &ltdiv& elements plus the element with id="log".<br>
+                      <input type="radio" name="q4" value="10" id="c1"/>div #log
+                      <input type="radio" name="q4" value="0" id="c2"/>div.#log
+                      <input type="radio" name="q4" value="0" id="c3"/>div&gt#log
+                      <input type="radio" name="q4" value="0" id="c4"/>div, #log
+                      
+                      <label for="radioOneInput"></label>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="radio-example">
+                      Which of the below method is used to get the JSON data using HTTP requests?<br>
+                      <input type="radio" name="q5" value="0" id="c1"/> jQuery.getScript( url, [callback] )
+                      <input type="radio" name="q5" value="0" id="c2"/> jQuery.post( url, [data], [callback], [type] )
+                      <input type="radio" name="q5" value="0" id="c3"/> jQuery.post( url, [type] )
+                      <input type="radio" name="q5" value="20" id="c4"/> jQuery.getJSON( url, [data], [callback] )
+                      <label for="radioOneInput"></label>
+                    </div>                     
+                  </div>
+
+                  <div class="form-group">
+                    <div class="radio-example">
+                      Everything in React is a _____________<br>
+                      <input type="radio" name="q6" value="0" id="c1"/> Module
+                      <input type="radio" name="q6" value="20" id="c2"/> Component
+                      <input type="radio" name="q6" value="0" id="c3"/> Package
+                      <input type="radio" name="q6" value="0" id="c4"/> Class
+                      <label for="radioOneInput"></label>
+                    </div>                     
+                  </div>
+
+                  <div class="form-group">
+                    <div class="radio-example">
+                      Which method in a React Component should you override to stop the component from updating?<br>
+                      <input type="radio" name="q7" value="0" id="c1"/> willComponentUpdate
+                      <input type="radio" name="q7" value="20" id="c2"/> shouldComponentUpdate
+                      <input type="radio" name="q7" value="0" id="c3"/> componentDidUpdate
+                      <input type="radio" name="q7" value="0" id="c4"/> componentDidMount
+                      <label for="radioOneInput"></label>
+                    </div>                     
+                  </div>
+
+                  <div class="form-group">
+                    <div class="radio-example">
+                      Which of the following is used to successfully add a header?<br>
+                      <input type="radio" name="q8" value="30" id="c1"/> response.writeHead(200, {'Content-Type': 'text/plain'})
+                      <input type="radio" name="q8" value="0" id="c2"/> request.writeHeader(200, {'Content-Type': 'text/plain'})
+                      <input type="radio" name="q8" value="0" id="c3"/> response.addHead(200, {'Content-Type': 'text/plain'})
+                      <input type="radio" name="q8" value="0" id="c4"/> None of the above
+                      <label for="radioOneInput"></label>
+                    </div>                     
+                  </div>
+
+                  <div class="form-group">
+                    <div class="radio-example">  
+                      A collection and a document in MongoDB is equivalent to............. concepts respectively.<br>
+                      <input type="radio" name="q9" value="0" id="c1"/> Table and Column
+                      <input type="radio" name="q9" value="30" id="c2"/> Table and Row
+                      <input type="radio" name="q9" value="0" id="c3"/> Column and Row
+                      <input type="radio" name="q9" value="0" id="c4"/> Database and Table
+                      <label for="radioOneInput"></label>
+                    </div>                     
+                  </div>
+
+                  <div class="form-group">
+                    <div class="radio-example">  
+                      Where a captured value is are populated regarding route parameters?<br>
+                      <input type="radio" name="q10" value="0" id="c1"/> app.locals object.
+                      <input type="radio" name="q10" value="40" id="c2"/> req.params object.
+                      <input type="radio" name="q10" value="0" id="c3"/> req.data object.
+                      <input type="radio" name="q10" value="0" id="c4"/> None of the above
+                      <label for="radioOneInput"></label>
+                    </div>                     
+                  </div>
+
+                  <div class="form-group">
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                  </div>
+
+                </form>
+              </div>
+            </div>
+
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+
+        </div>
+      </div>
+    </div>
+     
+    <footer class="footer-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur ut hic ipsum et veritatis corrupti. Itaque eius soluta optio dolorum temporibus in, atque, quos fugit sunt sit quaerat dicta.</p>
+          </div>
+
+          <div class="col-md-3 ml-auto">
+            <h3>Links</h3>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Programs</a></li>
+              <li><a href="#">Teachers</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h3>Subscribe</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt incidunt iure iusto architecto? Numquam, natus?</p>
+            <form action="#" class="footer-subscribe">
+              <div class="d-flex mb-5">
+                <input type="text" class="form-control rounded-0" placeholder="Email">
+                <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+            <p>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+  
+    
+  </div> <!-- .site-wrap -->
+
+  <script src="static/js/jquery-3.3.1.min.js"></script>
+  <script src="static/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="static/js/jquery-ui.js"></script>
+  <script src="static/js/popper.min.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/owl.carousel.min.js"></script>
+  <script src="static/js/jquery.stellar.min.js"></script>
+  <script src="static/js/jquery.countdown.min.js"></script>
+  <script src="static/js/bootstrap-datepicker.min.js"></script>
+  <script src="static/js/jquery.easing.1.3.js"></script>
+  <script src="static/js/aos.js"></script>
+  <script src="static/js/jquery.fancybox.min.js"></script>
+  <script src="static/js/jquery.sticky.js"></script>
+
+  
+  <script src="static/js/main.js"></script>
+    
+  </body>
+</html>
+

@@ -28,6 +28,9 @@ def landing(request):
 def questions(request):
     return render(request,'questions.html',{'name': 'vijitviku'})
 
+def questions12(request):
+    return render(request,'questions12.html',{'name': 'vijitviku'})
+
 def levels(request):
     ans1=int(request.POST['q1'])
     ans2=int(request.POST['q2'])

@@ -12,6 +12,7 @@ urlpatterns = {
     path('CompArch', views.CompArch, name = "CompArch"),
     path('landing', views.landing, name = "landing"),
     path('questions', views.questions, name = "questions"),
+    path('questions12', views.questions12, name = "questions12"),
     path('levels', views.levels, name = 'levels'),    
     path('l1', views.levels, name = 'l1'),
     path('l2', views.levels, name = 'l2'),

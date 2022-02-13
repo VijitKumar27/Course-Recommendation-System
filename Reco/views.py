@@ -49,7 +49,7 @@ def levels(request):
     if(res>=140):
         df = pd.read_csv('static/clean_dataset.csv')
         webdev_df = df.query("subject=='Web Development'").sort_values('engagement',ascending=False)
-        webdev_l1_df = webdev_df.query("level=='Beginner Level'").sort_values('engagement',ascending=False)
+        webdev_l1_df = webdev_df.query("level=='Expert Level'").sort_values('engagement',ascending=False)
         course_name=webdev_l1_df.iloc[0]
         course_link=webdev_l1_df.iloc[0].url
         return render(request,'l3.html',{'name': 'vijitviku', 'course_name':course_name,'course_link':course_link})
@@ -57,8 +57,8 @@ def levels(request):
     elif((res<140) and (res>=50)):
         df = pd.read_csv('static/clean_dataset.csv')
         webdev_df = df.query("subject=='Web Development'").sort_values('engagement',ascending=False)
-        webdev_l1_df = webdev_df.query("level=='Beginner Level'").sort_values('engagement',ascending=False)
-        course_name=webdev_l1_df.iloc[0]
+        webdev_l1_df = webdev_df.query("level=='Intermediate Level'").sort_values('engagement',ascending=False)
+        course_name=webdev_l1_df.iloc[0].course_title
         course_link=webdev_l1_df.iloc[0].url
         return render(request,'l2.html',{'name': 'vijitviku' , 'course_name':course_name,'course_link':course_link})
 
@@ -66,7 +66,7 @@ def levels(request):
         df = pd.read_csv('static/clean_dataset.csv')
         webdev_df = df.query("subject=='Web Development'").sort_values('engagement',ascending=False)
         webdev_l1_df = webdev_df.query("level=='Beginner Level'").sort_values('engagement',ascending=False)
-        course_name=webdev_l1_df.iloc[0]
+        course_name=webdev_l1_df.iloc[0].course_title 
         course_link=webdev_l1_df.iloc[0].url
         return render(request,'l1.html',{'name': 'vijitviku' , 'course_name':course_name,'course_link':course_link})
 

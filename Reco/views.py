@@ -50,25 +50,82 @@ def levels(request):
         df = pd.read_csv('static/clean_dataset.csv')
         webdev_df = df.query("subject=='Web Development'").sort_values('engagement',ascending=False)
         webdev_l1_df = webdev_df.query("level=='Expert Level'").sort_values('engagement',ascending=False)
-        course_name=webdev_l1_df.iloc[0]
-        course_link=webdev_l1_df.iloc[0].url
-        return render(request,'l3.html',{'name': 'vijitviku', 'course_name':course_name,'course_link':course_link})
+        course_name0=webdev_l1_df.iloc[0].course_title 
+        course_link0=webdev_l1_df.iloc[0].url
+
+        course_name1=webdev_l1_df.iloc[1].course_title 
+        course_link1=webdev_l1_df.iloc[1].url
+
+        course_name2=webdev_l1_df.iloc[2].course_title 
+        course_link2=webdev_l1_df.iloc[2].url
+
+        course_name3=webdev_l1_df.iloc[3].course_title 
+        course_link3=webdev_l1_df.iloc[3].url
+
+        course_name4=webdev_l1_df.iloc[4].course_title 
+        course_link4=webdev_l1_df.iloc[4].url
+        return render(request,'l3.html',
+        {'name': 'vijitviku' , 
+        'course_name0':course_name0,'course_link0':course_link0,
+        'course_name1':course_name1,'course_link1':course_link1,
+        'course_name2':course_name2,'course_link2':course_link2,
+        'course_name3':course_name3,'course_link3':course_link3,
+        'course_name4':course_name4,'course_link4':course_link4,
+        })
 
     elif((res<140) and (res>=50)):
         df = pd.read_csv('static/clean_dataset.csv')
         webdev_df = df.query("subject=='Web Development'").sort_values('engagement',ascending=False)
         webdev_l1_df = webdev_df.query("level=='Intermediate Level'").sort_values('engagement',ascending=False)
-        course_name=webdev_l1_df.iloc[0].course_title
-        course_link=webdev_l1_df.iloc[0].url
-        return render(request,'l2.html',{'name': 'vijitviku' , 'course_name':course_name,'course_link':course_link})
+        course_name0=webdev_l1_df.iloc[0].course_title 
+        course_link0=webdev_l1_df.iloc[0].url
+
+        course_name1=webdev_l1_df.iloc[1].course_title 
+        course_link1=webdev_l1_df.iloc[1].url
+
+        course_name2=webdev_l1_df.iloc[2].course_title 
+        course_link2=webdev_l1_df.iloc[2].url
+
+        course_name3=webdev_l1_df.iloc[3].course_title 
+        course_link3=webdev_l1_df.iloc[3].url
+
+        course_name4=webdev_l1_df.iloc[4].course_title 
+        course_link4=webdev_l1_df.iloc[4].url
+        return render(request,'l2.html',
+        {'name': 'vijitviku' , 
+        'course_name0':course_name0,'course_link0':course_link0,
+        'course_name1':course_name1,'course_link1':course_link1,
+        'course_name2':course_name2,'course_link2':course_link2,
+        'course_name3':course_name3,'course_link3':course_link3,
+        'course_name4':course_name4,'course_link4':course_link4,
+        })
 
     else:
         df = pd.read_csv('static/clean_dataset.csv')
         webdev_df = df.query("subject=='Web Development'").sort_values('engagement',ascending=False)
         webdev_l1_df = webdev_df.query("level=='Beginner Level'").sort_values('engagement',ascending=False)
-        course_name=webdev_l1_df.iloc[0].course_title 
-        course_link=webdev_l1_df.iloc[0].url
-        return render(request,'l1.html',{'name': 'vijitviku' , 'course_name':course_name,'course_link':course_link})
+        course_name0=webdev_l1_df.iloc[0].course_title 
+        course_link0=webdev_l1_df.iloc[0].url
+
+        course_name1=webdev_l1_df.iloc[1].course_title 
+        course_link1=webdev_l1_df.iloc[1].url
+
+        course_name2=webdev_l1_df.iloc[2].course_title 
+        course_link2=webdev_l1_df.iloc[2].url
+
+        course_name3=webdev_l1_df.iloc[3].course_title 
+        course_link3=webdev_l1_df.iloc[3].url
+
+        course_name4=webdev_l1_df.iloc[4].course_title 
+        course_link4=webdev_l1_df.iloc[4].url
+        return render(request,'l1.html',
+        {'name': 'vijitviku' , 
+        'course_name0':course_name0,'course_link0':course_link0,
+        'course_name1':course_name1,'course_link1':course_link1,
+        'course_name2':course_name2,'course_link2':course_link2,
+        'course_name3':course_name3,'course_link3':course_link3,
+        'course_name4':course_name4,'course_link4':course_link4,
+        })
 
     
 # def analysis_l1(request):
